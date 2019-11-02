@@ -1,0 +1,31 @@
+BASE_URL = https://hamsahmedansari-todo-server.herokuapp.com
+Method : Post
+ROUTE = /todo
+Headers : application/json
+Body : PARAMS = {
+		description: "d"
+		isDelete: false
+		status: "open"
+		title: "hams"
+		type: "WK"
+		}
+
+Method : GET
+ROUTE = /todo
+Headers : application/json
+
+Method : PUT
+ROUTE = /todo/:id
+Headers : application/json
+Body :  PARAMS = {
+		date: "2019-10-30T09:51:35.107Z",
+		description: "d",
+		isDelete: false,
+		status: "done",
+  		title: "hams",
+ 		type: "WK",
+		}
+
+Method : DELETE
+Headers : application/json
+ROUTE = /todo/:id
